@@ -43,7 +43,8 @@ group :development, :test do
   gem 'selenium-webdriver'
 end
 
-group :development do
+group :development do    
+  gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
