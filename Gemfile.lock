@@ -194,7 +194,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+<<<<<<< HEAD
   bootstrap-sass (= 3.3.7)
+=======
+  bootstrap-sass (~> 3.3, >= 3.3.7)
+>>>>>>> 538da6d92dba399008ed7ac487f4729df48847ca
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
