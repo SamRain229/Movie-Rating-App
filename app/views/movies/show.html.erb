@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+
+<%= image_tag @movie.poster.url(:medium) %> 
 <p>
   <strong>Title:</strong>
   <%= @movie.title %>
@@ -11,7 +13,7 @@
 </p>
 
 <p>
-  <strong>Movie length:</strong>
+  <strong>Duration:</strong>
   <%= @movie.movie_length %>
 </p>
 
