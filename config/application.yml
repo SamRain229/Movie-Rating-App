@@ -1,0 +1,4 @@
+# Add configuration values here, as shown below.
+development:
+    FACEBOOK_APP_ID: "244543343057385"
+    FACEBOOK_APP_SECRET: "f3988652c7a3cc30d8c3464815416e81"
