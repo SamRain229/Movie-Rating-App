@@ -3,8 +3,8 @@ Rails.application.routes.draw do
   get 'home/index'
 
  devise_for :users, controllers: { omniauth_callbacks: 'omniauth_callbacks' }
- resources :mains
-  get 'mains' => 'mains#index'
+ resources :movies
+  get 'movies' => 'movies#index'
 
 authenticated :user do
    root 'home#index', as: 'authenticated_root'
