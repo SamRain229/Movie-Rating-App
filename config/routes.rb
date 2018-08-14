@@ -2,11 +2,16 @@ Rails.application.routes.draw do
   resources :movies
   get 'home/index'
 
-  devise_for :users
+  devise_for :users, controllers: { omniauth_callbacks: 'omniauth_callbacks' }
   resources :mains
    get 'mains' => 'mains#index'
 
-
+authenticated :user do
+    root 'home#index', as: 'authenticated_root'
+  end
+  devise_scope :user do
+    root 'devise/sessions#new'
+  end
      
  
 end

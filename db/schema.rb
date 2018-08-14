@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20180814212957) do
+=======
+ActiveRecord::Schema.define(version: 20180814215101) do
+>>>>>>> dcff83e7028f7151842cb8e26cda61b1b40610e1
 
   create_table "mains", force: :cascade do |t|
     t.text "content"
@@ -42,6 +46,8 @@ ActiveRecord::Schema.define(version: 20180814212957) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "username"
+    t.string "provider"
+    t.string "uid"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
     t.index ["username"], name: "index_users_on_username", unique: true
