@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20180814212957) do
-=======
-ActiveRecord::Schema.define(version: 20180814215101) do
->>>>>>> dcff83e7028f7151842cb8e26cda61b1b40610e1
+ActiveRecord::Schema.define(version: 20180814220401) do
 
   create_table "mains", force: :cascade do |t|
     t.text "content"
@@ -26,10 +22,13 @@ ActiveRecord::Schema.define(version: 20180814215101) do
     t.string "title"
     t.text "description"
     t.string "movie_length"
-    t.string "director"
     t.string "rating"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "poster_file_name"
+    t.string "poster_content_type"
+    t.integer "poster_file_size"
+    t.datetime "poster_updated_at"
   end
 
   create_table "users", force: :cascade do |t|
