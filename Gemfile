@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'omniauth-facebook'
 # Development ENV Variables
 gem 'figaro'
+gem "paperclip", "~> 5.0.0.beta1"
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
