@@ -23,11 +23,12 @@
         <td> 
             <ul class="rating">
                 <%(1..5).each do |i| %>
-                <li class="rating_star" id=<%= "#{movie}_#{i}" %>">
-                                                                     </li>
+                <li class="rating_star" id=<%= "#{movie}_#{i}" %>">  </li>
                 <% end %>
+                                                                  
             
-            </ul> </td>
+            </ul> 
+                    </td>
         <td><%= link_to 'Show', movie %></td>
         <td><%= link_to 'Edit', edit_movie_path(movie) %></td>
         <td><%= link_to 'Destroy', movie, method: :delete, data: { confirm: 'Are you sure?' } %></td>

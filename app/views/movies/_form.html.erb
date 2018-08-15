@@ -32,10 +32,10 @@
 
   <div class="field">
     <%= form.label :rating %>
-    <%= form.text_field :rating, id: :movie_rating %>
+    <%= form.number_field :rating, id: :movie_rating %>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="actions" >
+    <%= form.submit class: 'btn btn-primary' %>
   </div>
 <% end %>
