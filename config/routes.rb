@@ -2,7 +2,8 @@ Rails.application.routes.draw do
  resources :movies
   get 'home/index'
 
- devise_for :users, controllers: { omniauth_callbacks: 'omniauth_callbacks' }
+ devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+
  resources :movies
   get 'movies' => 'movies#index'
 
