@@ -9,6 +9,17 @@ class User < ApplicationRecord
             user.provider = auth.provider
             user.uid = auth.uid
             user.password = Devise.friendly_token[0,20]
+          end
+        
     end
+    
+    def apply_omniauth(auth)
+  update_attributes(
+    provider: auth.provider,
+    uid: auth.uid
+  )
 end
+    def has_facebook_linked?
+          self.provider.present? && self.uid.present?
+    end
 end
