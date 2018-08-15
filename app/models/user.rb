@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  devise :database_authenticatable, :registerable, :recoverable, :rememberable, 
+  devise :database_authenticatable, :registerable, :recoverable, :rememberable,
          :trackable, :validatable, :omniauthable, omniauth_providers: [:facebook]
     def self.from_omniauth(auth)
           where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
@@ -10,20 +10,23 @@ class User < ApplicationRecord
             user.uid = auth.uid
             user.password = Devise.friendly_token[0,20]
           end
-        
+
     end
-    
+
     def apply_omniauth(auth)
-  update_attributes(
-    provider: auth.provider,
-    uid: auth.uid
-  )
+  update_attributes(provider: auth.provider, uid: auth.uid)
 end
 
 
 
+
+
+ cc6d43765f372def6c50cc25a47e56edea61d641
     def has_facebook_linked?
           self.provider.present? && self.uid.present?
     end
-
+ HEAD
 end
+
+
+cc6d43765f372def6c50cc25a47e56edea61d64
