@@ -12,11 +12,4 @@
 //
 //= require rails-ujs
 //= require turbolinks
-//= require_tree .
-
-<<<<<<< HEAD
-=======
-
-//= require ratyrate
->>>>>>> 538da6d92dba399008ed7ac487f4729df48847ca
-
+//= require bootstrap-sprockets
