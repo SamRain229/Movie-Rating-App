@@ -20,7 +20,9 @@ class MoviesController < ApplicationController
   # GET /movies/1/edit
   def edit
   end
-
+def blank_stars
+ 5 - rating.to_i
+end
   # POST /movies
   # POST /movies.json
   def create

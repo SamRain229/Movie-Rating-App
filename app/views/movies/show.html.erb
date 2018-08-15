@@ -18,9 +18,16 @@
 </p>
 
 <p>
+    
   <strong>Rating:</strong>
   <%= @movie.rating %>
 </p>
+<p>Averate rating</p>
+<div id="star"></div>
 
-<%= link_to 'Edit', edit_movie_path(@movie) %> |
-<%= link_to 'Back', movies_path %>
+<p>Your rating</p>
+<div id="user_star">
+
+
+<%= link_to 'Edit', edit_movie_path(@movie),  class: 'btn btn-primary'%> |
+<%= link_to 'Back', movies_path, class: "btn btn-secondary"  %>
