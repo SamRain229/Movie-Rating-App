@@ -12,7 +12,7 @@ authenticated :user do
  devise_scope :user do
    root 'devise/sessions#new'
  end
-
+resources :authentications, only: [:destroy]
 
 end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
