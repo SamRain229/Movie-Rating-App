@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 
-<%= image_tag @movie.poster.url(:medium) %> 
+<%= image_tag @movie.poster.url(:medium) %>
 <p>
   <strong>Title:</strong>
   <%= @movie.title %>
@@ -22,11 +22,6 @@
   <strong>Rating:</strong>
   <%= @movie.rating %>
 </p>
-<p>Averate rating</p>
-<div id="star"></div>
-
-<p>Your rating</p>
-<div id="user_star">
 
 
 <%= link_to 'Edit', edit_movie_path(@movie),  class: 'btn btn-primary'%> |
