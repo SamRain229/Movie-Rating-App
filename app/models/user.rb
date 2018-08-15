@@ -18,6 +18,7 @@ class User < ApplicationRecord
     provider: auth.provider,
     uid: auth.uid
   )
+        def has_facebook_linked?
+  self.provider.present? && self.uid.present?
 end
-
 end
