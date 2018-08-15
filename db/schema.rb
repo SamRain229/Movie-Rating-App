@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180814220401) do
+ActiveRecord::Schema.define(version: 20180815193444) do
 
   create_table "mains", force: :cascade do |t|
     t.text "content"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20180814220401) do
     t.string "poster_content_type"
     t.integer "poster_file_size"
     t.datetime "poster_updated_at"
+    t.integer "users_id"
   end
 
   create_table "users", force: :cascade do |t|
