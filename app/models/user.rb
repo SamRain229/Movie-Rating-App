@@ -21,12 +21,11 @@ end
 
 
 
- cc6d43765f372def6c50cc25a47e56edea61d641
+
     def has_facebook_linked?
           self.provider.present? && self.uid.present?
     end
- HEAD
+ 
 end
 
 
-cc6d43765f372def6c50cc25a47e56edea61d64

@@ -8,38 +8,12 @@
   </head>
 
   <body>
-<<<<<<< HEAD
+
       <%= render 'layouts/header' %>
       
     
-=======
+
   <%= javascript_include_tag "application" %>
-      <header class="navbar navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <%= link_to "Maku MovieRatingApp", '#', id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home",   '/' %></li>
-            <li><%= link_to "Help", '/help' %></li>
-            <li><%= link_to "Log in", 'users/sign_in' %></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-      <div>
-          <% if user_signed_in? %>
-              <%= link_to "Edit profile", edit_user_registration_path %> |
-              <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
-          <% else %>
-              <%= link_to "Sign up", new_user_registration_path  %> |
-              <%= link_to "Login", new_user_session_path  %>
-          <% end %>
-        <p class="notice"><%= notice %></p>
-        <p class="alert"><%= alert %></p>
-      </div>
-    <div class="container">
-      <%= yield %>
-    </div>
->>>>>>> cc6d43765f372def6c50cc25a47e56edea61d641
+   
     </body>
 </html>

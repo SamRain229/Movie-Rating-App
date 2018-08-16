@@ -1,6 +1,7 @@
 class MoviesController < ApplicationController
   before_action :set_movie, only: [:show, :edit, :update, :destroy]
 
+   
   # GET /movies
   # GET /movies.json
   def index
@@ -20,9 +21,7 @@ class MoviesController < ApplicationController
   # GET /movies/1/edit
   def edit
   end
-def blank_stars
- 5 - rating.to_i
-end
+
   # POST /movies
   # POST /movies.json
   def create
