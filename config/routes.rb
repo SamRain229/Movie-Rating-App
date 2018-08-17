@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
 
+  devise_for :users
+  post '/rate' => 'rater#create'
  resources :movies
   get 'home/index'
     get 'help' => 'static#help'
 
- devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+ # devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
  
  resources :users do
      resources :movies
