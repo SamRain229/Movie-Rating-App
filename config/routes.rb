@@ -1,18 +1,30 @@
 Rails.application.routes.draw do
+
+  devise_for :users
+  post '/rate' => 'rater#create'
  resources :movies
   get 'home/index'
+    get 'help' => 'static#help'
 
- devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+ # devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+ 
+ resources :users do
+     resources :movies
+ end   
+    
+#   get 'movies' => 'movies#index'
 
- resources :movies
-  get 'movies' => 'movies#index'
-
-authenticated :user do
+ authenticated :user do
    root 'home#index', as: 'authenticated_root'
  end
  devise_scope :user do
    root 'devise/sessions#new'
  end
 resources :authentications, only: [:destroy]
-end
+ 
+
+
+
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+end

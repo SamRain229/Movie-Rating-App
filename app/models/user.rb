@@ -5,6 +5,11 @@ class User < ApplicationRecord
   has_many :commits
     
   # Include default devise modules. Others available are:
+  # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
+  devise :database_authenticatable, :registerable,
+         :recoverable, :rememberable, :validatable
+  has_many :movies
+  # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable, :recoverable, :rememberable,
          :trackable, :validatable, :omniauthable, omniauth_providers: [:facebook]
@@ -21,8 +26,16 @@ class User < ApplicationRecord
     def apply_omniauth(auth)
   update_attributes(provider: auth.provider, uid: auth.uid)
 end
+
+
+
+
+
+
     def has_facebook_linked?
           self.provider.present? && self.uid.present?
     end
-
+ 
 end
+
+
