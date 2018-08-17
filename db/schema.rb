@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180817031356) do
+ActiveRecord::Schema.define(version: 20180817031210) do
 
   create_table "mains", force: :cascade do |t|
     t.text "content"
@@ -31,7 +31,6 @@ ActiveRecord::Schema.define(version: 20180817031356) do
     t.datetime "poster_updated_at"
     t.integer "users_id"
     t.integer "user_id"
-    t.string "commit"
     t.string "director"
     t.index ["user_id"], name: "index_movies_on_user_id"
   end
