@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20180816215225) do
     t.string "poster_content_type"
     t.integer "poster_file_size"
     t.datetime "poster_updated_at"
+    t.integer "users_id"
     t.integer "user_id"
     t.index ["user_id"], name: "index_movies_on_user_id"
   end
