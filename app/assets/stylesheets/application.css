@@ -16,3 +16,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+.movie-poster {
+    max-width: 300px;
+}
