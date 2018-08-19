@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180817031210) do
+ActiveRecord::Schema.define(version: 20180818182124) do
 
   create_table "mains", force: :cascade do |t|
     t.text "content"
@@ -33,6 +33,12 @@ ActiveRecord::Schema.define(version: 20180817031210) do
     t.integer "user_id"
     t.string "director"
     t.index ["user_id"], name: "index_movies_on_user_id"
+  end
+
+  create_table "reviews", force: :cascade do |t|
+    t.string "opinion"
+    t.integer "movie_id"
+    t.index ["movie_id"], name: "index_reviews_on_movie_id"
   end
 
   create_table "users", force: :cascade do |t|

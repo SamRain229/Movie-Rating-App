@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
 
+  resources :reviews
   devise_for :users
   post '/rate' => 'rater#create'
  resources :movies
+  
+ 
   get 'home/index'
     get 'help' => 'static#help'
 
