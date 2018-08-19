@@ -1,17 +1,20 @@
+
 <p id="notice"><%= notice %></p>
 
 <h1>Movies</h1>
 
+<div class="well" style="width: 80rem;">
+
 <table>
   <thead>
     <tr>
-      <th>Title</th>
+      <td><strong> Title </strong></td>
         
-      <th>Description</th>
+        <td> <strong> Description </strong> </td>
  
-      <th>Movie length</th>
+        <td><strong> Movie length </strong></td>
      
-      <th >Rating</th>
+        <td> <strong> Rating </strong> </td>
      <th colspan="5"></th>
     </tr>
   </thead>
@@ -21,10 +24,12 @@
       <%= image_tag movie.poster, class: "movie-poster"  %> 
       <tr>
         <td><%= movie.poster.url(:medium) %> </td
+          <br>
         <td><%= movie.title %></td>
         <td><%= movie.description %></td>
         <td><%= movie.movie_length %></td>
         <td><%= movie.rating %></td>
+          
         
           
           
@@ -41,3 +46,5 @@
 <br>
 
 <%= link_to 'New Movie', new_movie_path %>
+   
+</div>

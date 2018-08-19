@@ -19,3 +19,11 @@
 .movie-poster {
     max-width: 300px;
 }
+
+
+body { 
+  background-image: url(background.jpg); 
+background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

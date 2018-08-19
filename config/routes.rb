@@ -12,6 +12,7 @@ Rails.application.routes.draw do
      resources :movies
  end   
     
+ 
 #   get 'movies' => 'movies#index'
 
  authenticated :user do
