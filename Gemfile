@@ -33,7 +33,7 @@ gem 'omniauth-facebook'
 gem 'figaro'
 gem "paperclip", "~> 5.0.0.beta1"
 gem 'ratyrate', '~> 1.2.2.alpha'
-
+gem 'elasticsearch', '~> 6.1'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

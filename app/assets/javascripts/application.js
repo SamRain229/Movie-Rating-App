@@ -18,6 +18,9 @@
 
 <<<<<<< HEAD
 =======
+//= require jquery
+//= require jquery.raty
+
 
 //= require ratyrate
 >>>>>>> 538da6d92dba399008ed7ac487f4729df48847ca
