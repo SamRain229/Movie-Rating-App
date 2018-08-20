@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-    
+  has_many :movies
   has_many :ratings
   has_many :descriptions 
   has_many :comments
