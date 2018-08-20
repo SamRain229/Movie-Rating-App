@@ -5,7 +5,9 @@ class Movie < ApplicationRecord
    belongs_to :title
    belongs_to :director
    belongs_to :movie_length
-   belongs_to :commit
+   belongs_to :comment
+   belongs_to :review
+    
 
     
     has_attached_file :poster, styles: { medium:  '400x400#'}
