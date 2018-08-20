@@ -12,12 +12,6 @@
 
 ActiveRecord::Schema.define(version: 20180819204303) do
 
-  create_table "mains", force: :cascade do |t|
-    t.text "content"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "movies", force: :cascade do |t|
     t.string "title"
     t.text "description"
@@ -29,7 +23,6 @@ ActiveRecord::Schema.define(version: 20180819204303) do
     t.string "poster_content_type"
     t.integer "poster_file_size"
     t.datetime "poster_updated_at"
-    t.integer "users_id"
     t.integer "user_id"
     t.string "director"
     t.index ["user_id"], name: "index_movies_on_user_id"

@@ -19,3 +19,27 @@
 .movie-poster {
     max-width: 300px;
 }
+
+
+body { 
+  background-image: url(background.jpg); 
+background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#link {
+    color: white;
+}
+#photoid{
+    float: right;
+}
