@@ -35,7 +35,7 @@ gem 'paperclip', '~> 5.2'
 gem 'ratyrate', '~> 1.2.2.alpha'
 gem 'elasticsearch', '~> 6.1'
 gem 'searchkick', '~> 3.1', '>= 3.1.1'
-gem 'themoviedb', '~> 1.0', '>= 1.0.1'
+gem 'themoviedb-api'
 
 
 # Use Redis adapter to run Action Cable in production
