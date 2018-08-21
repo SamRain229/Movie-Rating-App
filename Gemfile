@@ -31,11 +31,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'omniauth-facebook'
 # Development ENV Variables
 gem 'figaro'
-gem "paperclip", "~> 5.0.0.beta1"
+gem 'paperclip', '~> 6.1'
 gem 'ratyrate', '~> 1.2.2.alpha'
 gem 'elasticsearch', '~> 6.1'
 gem 'searchkick', '~> 3.1', '>= 3.1.1'
-gem 'themoviedb-api'
+gem 'themoviedb', '~> 1.0', '>= 1.0.1'
 
 
 # Use Redis adapter to run Action Cable in production
