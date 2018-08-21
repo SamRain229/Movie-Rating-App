@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'omniauth-facebook'
 # Development ENV Variables
 gem 'figaro'
-gem 'paperclip', '~> 6.1'
+gem 'paperclip', '~> 5.2'
 gem 'ratyrate', '~> 1.2.2.alpha'
 gem 'elasticsearch', '~> 6.1'
 gem 'searchkick', '~> 3.1', '>= 3.1.1'

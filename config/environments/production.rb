@@ -87,6 +87,8 @@ Rails.application.configure do
     config.logger    = ActiveSupport::TaggedLogging.new(logger)
   end
 
+    
+  config.Tmdb::Api.key("aab1bfeb2f0319ab928c784ce76da69b")
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
