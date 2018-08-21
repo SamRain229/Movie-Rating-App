@@ -1,6 +1,6 @@
 class Movie < ApplicationRecord
     
-searchkick 
+ 
     
    belongs_to :rating
    belongs_to :description
