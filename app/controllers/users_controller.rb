@@ -61,6 +61,11 @@ class UsersController < ApplicationController
     end
   end
 
+  # def reviews
+  #   @list = Review.find(params[:user_id])
+  #   @reviews = @list.reviews
+  # end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
