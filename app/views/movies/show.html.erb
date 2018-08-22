@@ -1,10 +1,9 @@
 
 
 
-<div class="well" style="width: 80rem;">
-    <p id="notice"><%= notice %></p>
 
-       
+<div class="well" style="width: 80rem;">
+         
 <%= image_tag @movie.poster.url(:medium) %> 
     
 <p>
@@ -28,9 +27,14 @@
     
 </p>
 
-
-<%= link_to 'Edit', edit_movie_path(@movie) %> |
+<div class="btn btn-dark">
+<%= link_to 'Edit', edit_movie_path(@movie) %> 
+    </div>
+<div class="btn btn-dark">
 <%= link_to 'Back', movies_path %>
+    </div>
 </div>
+
+
 
 

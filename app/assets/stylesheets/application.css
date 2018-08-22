@@ -20,8 +20,10 @@ html {
     height: 100%;
 }
 
+/*movie poster on the main page */
 .movie-poster {
-    max-width: 300px;
+    max-width: 100px;
+    max-height: 300px;
 }
 
 
@@ -50,9 +52,14 @@ footer {
     color: white;
     text-align: center;
 }
+#signin{
+    float: right;
+    margin: 10px;
+}
 #link {
     color: white;
 }
 #photoid{
     float: right;
 }
+
