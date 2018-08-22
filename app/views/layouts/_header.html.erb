@@ -1,11 +1,8 @@
-  
-      
-      <header class="navbar navbar-fixed-top navbar-inverse">
+ <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <%= link_to "Maku MovieRatingApp", 'movies', id: "logo" %>
         <nav>
           <ul class="nav navbar-nav navbar-right">
-              
             <li><%= link_to "Home",   '/movies' %></li>
             <li><%= link_to "Help", help_path %></li>
             <li><%= link_to "Account", 'users/sign_in' %></li>
@@ -13,10 +10,10 @@
                   <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                   <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button></li>
               
-          </ul>
-        </nav>
-      </div>
-    </header>
+         </ul>
+      </nav>
+    </div>
+</header>
       <div>
           <% if user_signed_in? %>
               <%= link_to "Edit profile", edit_user_registration_path %> |

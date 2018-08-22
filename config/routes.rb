@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
-  resources :reviews
-  devise_for :users
-  post '/rate' => 'rater#create'
- resources :movies
+resources :reviews
+devise_for :users
+  
+    
+resources :movies
   
  
   get 'home/index'
@@ -11,9 +12,10 @@ Rails.application.routes.draw do
 
  # devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
  
- resources :users do
-     resources :movies
- end   
+ resources :users 
+#     do
+# #     resources :movies
+#  end   
     
  
 #   get 'movies' => 'movies#index'

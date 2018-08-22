@@ -1,28 +1,36 @@
-<p id="notice"><%= notice %></p>
+
+
+
+<div class="well" style="width: 80rem;">
+    <p id="notice"><%= notice %></p>
 
        
 <%= image_tag @movie.poster.url(:medium) %> 
+    
 <p>
   <strong>Title:</strong>
   <%= @movie.title %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong>Review:</strong>
   <%= @movie.description %>
 </p>
 
 <p>
-  <strong>Duration:</strong>
+  <strong>Movie length:</strong>
   <%= @movie.movie_length %>
 </p>
 
 <p>
   <strong>Rating:</strong>
   <%= @movie.rating %>
-    <%= rating_for @movie %> 
+    
 </p>
 
 
 <%= link_to 'Edit', edit_movie_path(@movie) %> |
 <%= link_to 'Back', movies_path %>
+</div>
+
+

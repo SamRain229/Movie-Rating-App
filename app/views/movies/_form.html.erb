@@ -17,26 +17,34 @@
   </div>
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title, id: :movie_title %>
+       <br>
+    <%= form.text_field :title %>
   </div>
 
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :movie_description %>
+    <%= form.label :Review %>
+       <br>
+    <%= form.text_area :description  %>
   </div>
 
   <div class="field">
     <%= form.label :movie_length %>
-    <%= form.text_field :movie_length, id: :movie_movie_length %>
+       <br>
+    <%= form.text_field :movie_length  %>
   </div>
 
   <div class="field">
     <%= form.label :rating %>
-    <%= form.number_field :rating, inLid: :movie_rating  %>
+       <br>
+    <%= form.number_field :rating  %>
   </div>
+<br> 
 
 
   <div class="actions" >
-    <%= form.submit class: 'btn btn-primary' %>
+    <%= form.submit  %>   
   </div>
+
+ <br>
+
 <% end %>
