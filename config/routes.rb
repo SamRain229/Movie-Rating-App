@@ -7,9 +7,12 @@ devise_for :users
 resources :movies
   
  
-  get 'home/index'
-    get 'help' => 'static#help'
-
+get 'home/index'
+get 'help' => 'static#help'
+    
+get 'pages'=> 'pages#whoweare'
+    
+    
  # devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
  
  resources :users 
